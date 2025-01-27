@@ -1,63 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-27T19:54:33.294511" rpa="false" schemaversion="5">
-<suite id="s1" name="TC1" source="C:\Users\Administrator\OneDrive\Desktop\Robotframeworkpractice\TestCases\TC1.robot">
-<test id="s1-t1" name="LoginTest" line="11">
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-27T21:35:30.390437" rpa="false" schemaversion="5">
+<suite id="s1" name="Inputbox" source="C:\Users\Administrator\OneDrive\Desktop\Robotframeworkpractice\TestCases\Inputbox.robot">
+<test id="s1-t1" name="Inputbox" line="9">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-27T19:54:33.584186" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
-<msg time="2025-01-27T19:54:33.584561" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<msg time="2025-01-27T21:35:30.715083" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-01-27T21:35:30.715694" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <arg>executable_path=C:/Users/Administrator/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-27T19:54:33.583900" elapsed="2.923329"/>
+<status status="PASS" start="2025-01-27T21:35:30.714784" elapsed="4.009918"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-27T21:35:34.725196" elapsed="0.309087"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-27T19:54:39.508507" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-01-27T21:35:38.035705" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-27T19:54:36.507736" elapsed="3.001130"/>
+<status status="PASS" start="2025-01-27T21:35:35.034911" elapsed="3.000943"/>
 </kw>
-<kw name="LoginapplicationMethod">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-27T19:54:39.513102" level="INFO">Typing text 'pavanoltraining@gmail.com' into text field 'id:autocomplete'.</msg>
-<arg>id:autocomplete</arg>
-<arg>pavanoltraining@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-27T19:54:39.511952" elapsed="0.155802"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-27T19:54:39.668305" level="INFO">Clicking element 'xpath://input[@value='radio1']'.</msg>
-<arg>xpath://input[@value='radio1']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-27T19:54:39.668018" elapsed="0.067759"/>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-01-27T21:35:38.043780" level="INFO">Page title is 'Practice Page'.</msg>
+<arg>Practice Page</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-01-27T21:35:38.036314" elapsed="0.007621"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-27T19:54:42.736922" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-01-27T21:35:41.045227" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-27T19:54:39.735964" elapsed="3.001422"/>
+<status status="PASS" start="2025-01-27T21:35:38.044329" elapsed="3.001445"/>
 </kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-01-27T19:54:42.738744" level="INFO">Clicking button 'xpath://input[@value='radio2']'.</msg>
-<arg>xpath://input[@value='radio2']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-27T19:54:42.738019" elapsed="0.087911"/>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-27T21:35:41.048352" level="INFO">Clicking link 'xpath://a[@class='blinkingText']'.</msg>
+<arg>xpath://a[@class='blinkingText']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-27T21:35:41.047066" elapsed="0.252927"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-27T19:54:45.826784" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-01-27T21:35:44.300957" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-27T19:54:42.826112" elapsed="3.000914"/>
+<status status="PASS" start="2025-01-27T21:35:41.300468" elapsed="3.000597"/>
 </kw>
-<status status="PASS" start="2025-01-27T19:54:39.510684" elapsed="6.316651"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-01-27T19:54:45.827882" elapsed="2.260609"/>
-</kw>
-<status status="PASS" start="2025-01-27T19:54:33.582837" elapsed="14.506627"/>
+<status status="PASS" start="2025-01-27T21:35:30.713828" elapsed="13.587590"/>
 </test>
-<status status="PASS" start="2025-01-27T19:54:33.296334" elapsed="14.795455"/>
+<status status="PASS" start="2025-01-27T21:35:30.392055" elapsed="13.910280"/>
 </suite>
 <statistics>
 <total>
@@ -66,10 +56,10 @@
 <tag>
 </tag>
 <suite>
-<stat name="TC1" id="s1" pass="1" fail="0" skip="0">TC1</stat>
+<stat name="Inputbox" id="s1" pass="1" fail="0" skip="0">Inputbox</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-01-27T19:54:33.584186" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-01-27T21:35:30.715083" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
 </errors>
 </robot>
